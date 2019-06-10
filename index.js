@@ -31,8 +31,13 @@ function viewCart() {
         itemsArray.push(' ' + item + ' at $' + price);
       }
       
-      if (itemsArray.length === 1)
-      return 'In your cart, you have' + itemsArray + '.';
+      if (itemsArray.length === 1) {
+        return 'In your cart, you have' + itemsArray + '.';
+      } else if (itemsArray.length === 2) {
+        return 'In your cart, you have' + itemsArray[0] + ' , and ' + itemsArray[1];
+      } else if (itemsArray.length === 3) {
+        return 
+      }
   }
 }
 
