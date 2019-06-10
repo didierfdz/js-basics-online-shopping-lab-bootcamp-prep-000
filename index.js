@@ -56,8 +56,14 @@ function total() {
   return sum;
 }
 
+
 function removeFromCart(item) {
-  // write your code here
+  if (obj[item] === undefined) {
+    return 'That item is not in your cart.';
+  } else {
+    delete obj[item];
+    return obj
+  }
 }
 
 function placeOrder(cardNumber) {
