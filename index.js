@@ -36,8 +36,8 @@ function viewCart() {
       } else if (itemsArray.length === 2) {
         return 'In your cart, you have' + itemsArray[0] + ', and' + itemsArray[1] + '.';
       } else {
-        var newItemsArray = itemsArray.slice(0,-1)
-        return 'In your cart, you have' + newItemsArray.join(',') + ', and' + itemsArray[itemsArray.length-1] + '.';
+        var firstItemsArray = itemsArray.slice(0,-1)
+        return 'In your cart, you have' + firstItemsArray.join(',') + ', and' + itemsArray[itemsArray.length-1] + '.';
       }
   }
 }
