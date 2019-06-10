@@ -62,10 +62,11 @@ function removeFromCart(item) {
     var eachItem = cart[i];
     var cartItem = eachItem.itemName;
     
-    if (cartItem !== item) {
-      return 'That item is not in your cart.';
+    if (cartItem === item) {
+      delete cart(eachItem);
+      return cart;
     } else {
-      
+      return 'That item is not in your cart.';
     }
   }   
 }
