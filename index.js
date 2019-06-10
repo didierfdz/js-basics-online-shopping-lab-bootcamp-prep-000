@@ -20,7 +20,19 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  
+  if (cart.length === 0) {
+    return 'Your shopping cart is empty.';
+  } else {
+      var itemsArray = [];
+      for (var i = 0; i < cart.length; i += 1) {
+        var eachItem = cart[i];
+        var item = eachItem.itemName;
+        var price = eachItem.itemPrice;
+        itemsArray.push(item + ' at ' + price);
+      }
+      
+      return 'In your cart, you have ' + itemsArray;
+  }
 }
 
 function total() {
