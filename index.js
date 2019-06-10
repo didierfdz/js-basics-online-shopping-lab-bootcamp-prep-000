@@ -28,10 +28,10 @@ function viewCart() {
         var eachItem = cart[i];
         var item = eachItem.itemName;
         var price = eachItem.itemPrice;
-        itemsArray.push(item + ' at $' + price);
+        itemsArray.push(' ' + item + ' at $' + price);
       }
       
-      return 'In your cart, you have ' + itemsArray + '.';
+      return 'In your cart, you have' + itemsArray + '.';
   }
 }
 
