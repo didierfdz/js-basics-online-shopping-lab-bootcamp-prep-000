@@ -9,6 +9,7 @@ function setCart(c) {
   return cart;
 }
 
+
 function addToCart(item) {
  var obj = {
   'itemName': item,
@@ -18,6 +19,7 @@ function addToCart(item) {
  cart.push(obj);
  return obj.itemName + ' has been added to your cart.';
 }
+
 
 function viewCart() {
   if (cart.length === 0) {
@@ -41,6 +43,7 @@ function viewCart() {
       }
   }
 }
+
 
 function total() {
   // write your code here
