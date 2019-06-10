@@ -67,7 +67,7 @@ function removeFromCart(item) {
     } else {
       
     }
-    
+  }   
 }
 
 function placeOrder(cardNumber) {
