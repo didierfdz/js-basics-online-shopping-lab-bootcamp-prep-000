@@ -14,6 +14,9 @@ function addToCart(item) {
   'itemName' = item,
   'itemPrice' = Math.random()
  };
+ 
+ cart.push(obj);
+ return cart;
 }
 
 function viewCart() {
