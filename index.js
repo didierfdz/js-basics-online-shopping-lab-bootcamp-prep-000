@@ -39,7 +39,7 @@ function viewCart() {
         return 'In your cart, you have' + itemsArray[0] + ', and' + itemsArray[1] + '.';
       } else {
         var firstItemsArray = itemsArray.slice(0,-1)
-        return 'In your cart, you have' + firstItemsArray.join(',') + ', and' + itemsArray[itemsArray.length-1] + '.';
+        return 'In your cart, you have' + firstItemsArray.join(',') + ', and' + itemsArray[itemsArray.length - 1] + '.';
       }
   }
 }
