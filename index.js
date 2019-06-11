@@ -63,7 +63,7 @@ function removeFromCart(item) {
     var cartItem = eachItem.itemName;
     
     if (cartItem === item) {
-      delete cart(eachItem);
+      ;
       return cart;
     } else {
       return 'That item is not in your cart.';
