@@ -61,14 +61,15 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i += 1) {
     var eachItem = cart[i];
     var cartItem = eachItem.itemName;
-  }
     
-  if (cartItem === item) {
+    if (cartItem === item) {
     cart.splice(eachItem);
-    return cart;
-  } else {
+    } else {
     return 'That item is not in your cart.';
+    }
   }
+  
+  return cart;
 }
 
 function placeOrder(cardNumber) {
