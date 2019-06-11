@@ -77,6 +77,13 @@ function placeOrder(cardNumber) {
   if (card === undefined || card === NaN) {
     return "Sorry, we don't have a credit card on file for you."
   } else {
+    var sum = 0;
+    for (var i = 0; i < cart.length; i += 1) {
+      var eachItem = cart[i];
+      var price = eachItem.itemPrice;
+      sum += price;
+    }
     
+    return 'Your total cost is $' + sum + ', which will be charged to the card ' + card; 
   }
 }
