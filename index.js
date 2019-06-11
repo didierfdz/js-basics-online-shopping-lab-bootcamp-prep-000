@@ -83,10 +83,9 @@ function placeOrder(cardNumber) {
       var price = eachItem.itemPrice;
       sum += price;
     }
-    
+    var newCart = cart.slice(0);
     return 'Your total cost is $' + sum + ', which will be charged to the card ' + card + '.'; 
   }
   
-  var newCart = cart.slice(0);
   return newCart;
 }
