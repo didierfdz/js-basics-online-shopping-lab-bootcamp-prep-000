@@ -74,7 +74,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   var card = cardNumber
   
-  if (card === undefined) {
+  if (card === undefined || card === NaN) {
     return "Sorry, we don't have a credit card on file for you."
   } else {
     
