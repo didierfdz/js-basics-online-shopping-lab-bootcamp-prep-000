@@ -84,6 +84,6 @@ function placeOrder(cardNumber) {
       sum += price;
     }
     
-    return 'Your total cost is $' + sum + ', which will be charged to the card ' + card; 
+    return 'Your total cost is $' + sum + ', which will be charged to the card ' + card + '.'; 
   }
 }
