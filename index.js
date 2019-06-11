@@ -64,12 +64,11 @@ function removeFromCart(item) {
     
     if (cartItem === item) {
     cart.splice(eachItem);
-    } else {
-    return 'That item is not in your cart.';
+    return cart;
     }
   }
   
-  return cart;
+  return 'That item is not in your cart.';
 }
 
 function placeOrder(cardNumber) {
