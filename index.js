@@ -72,7 +72,9 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber.length === 0) {
+  var card = cardNumber
+  
+  if (card === 0) {
     return "Sorry, we don't have a credit card on file for you."
   } else {
     
